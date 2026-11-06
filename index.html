@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Web | Dhika Muhamad Fhikri</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
+            
             background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
             color: white;
             min-height: 100vh;
@@ -18,71 +19,87 @@
             align-items: center;
             justify-content: center;
             overflow-x: hidden;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         .hero-text {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             animation: fadeInDown 1s ease;
+            max-width: 600px;
         }
 
         .hero-text h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 800;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
         }
 
         .hero-text p {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             color: #94a3b8;
+            line-height: 1.6;
         }
 
         .hero-text span { color: #60a5fa; }
         
         .card-container {
             display: flex;
-            gap: 30px;
-            animation: fadeInUp 1s ease;
+            gap: 25px;
+            animation: fadeInUp 1s ease 0.2s backwards;
             flex-wrap: wrap;
             justify-content: center;
+            max-width: 1200px;
         }
         
         .card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 20px;
-            padding: 40px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px 30px;
             width: 320px;
             text-align: center;
             text-decoration: none;
             color: white;
-            transition: all 0.4s ease;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .card:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-12px);
+            background: rgba(255, 255, 255, 0.08);
             border-color: #60a5fa;
-            box-shadow: 0 20px 40px rgba(96, 165, 250, 0.2);
+            box-shadow: 0 25px 50px rgba(96, 165, 250, 0.2);
         }
 
         .card-icon {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            display: inline-block;
-            transition: transform 0.4s ease;
+            font-size: 3rem;
+            margin-bottom: 25px;
+            height: 80px;
+            width: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+            transition: transform 0.4s ease, background 0.4s ease;
         }
 
-        .card:hover .card-icon { transform: scale(1.1) rotate(5deg); }
+        .card:hover .card-icon { 
+            transform: scale(1.1) rotate(5deg); 
+            background: rgba(96, 165, 250, 0.15);
+        }
 
         .card-title {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             color: #ffffff;
         }
 
@@ -91,14 +108,25 @@
             color: #cbd5e1;
             line-height: 1.6;
         }
+
+        .footer-text {
+            margin-top: 60px;
+            font-size: 0.85rem;
+            color: #64748b;
+            animation: fadeIn 1s ease 1s backwards;
+        }
         
         @keyframes fadeInDown {
             0% { opacity: 0; transform: translateY(-30px); }
             100% { opacity: 1; transform: translateY(0); }
         }
         @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(30px); }
+            0% { opacity: 0; transform: translateY(40px); }
             100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
     </style>
 </head>
@@ -106,23 +134,34 @@
     
     <div class="hero-text">
         <h1>Portal Web <span>Dhika.</span></h1>
-        <p>Silakan pilih destinasi halaman yang ingin Anda kunjungi.</p>
+        <p>Selamat datang di ruang kerja digital saya. Silakan pilih destinasi untuk melanjutkan penjelajahan.</p>
     </div>
     
     <div class="card-container">
         
         <a href="BIODATA/BIODATA_DIRI.html" class="card">
             <div class="card-icon">👨🏻‍💻</div>
-            <div class="card-title">Profil Pribadi</div>
-            <div class="card-desc">Jelajahi portofolio, riwayat pendidikan, dan pengalaman profesional saya.</div>
+            <div class="card-title">Portofolio Web</div>
+            <div class="card-desc">Jelajahi profil akademik, riwayat pendidikan, keahlian, dan pengalaman saya.</div>
         </a>
         
         
-        <a href="PROFIL_KELUARGA/profile_keluarga_1.html" class="card">
-            <div class="card-icon">🏡</div>
-            <div class="card-title">Profil Keluarga</div>
-            <div class="card-desc">Kenali lebih dekat silsilah dan cerita hangat dari keluarga besar Bu Dhika.</div>
+        <a href="https://github.com/20250910004-oss" target="_blank" class="card">
+            <div class="card-icon">💻</div>
+            <div class="card-title">Repository Tugas</div>
+            <div class="card-desc">Kumpulan source code, proyek web, dan arsip tugas praktikum pemrograman.</div>
         </a>
+
+        
+        <a href="mailto:dhikamuhamad18@gmail.com" class="card">
+            <div class="card-icon">✉️</div>
+            <div class="card-title">Mari Berjejaring</div>
+            <div class="card-desc">Tertarik berkolaborasi atau diskusi seputar teknologi? Hubungi saya via Email.</div>
+        </a>
+    </div>
+
+    <div class="footer-text">
+        &copy; 2026 Dhika Muhamad Fhikri. Sistem Informasi UNIKU.
     </div>
 
 </body>

@@ -9,13 +9,12 @@
 </head>
 <body>
 
-    
     <nav class="navbar fade-in-down">
         <div class="nav-brand">DKM.<span>Dev</span></div>
         <div class="nav-menu">
-            <a href="#tentang">Tentang Saya</a>
+            <a href="#profil-detail">Tentang Saya</a>
             <a href="#pendidikan">Pendidikan</a>
-            <a href="#pengalaman">Pengalaman</a>
+            <a href="#jadwal">Jadwal Kuliah</a>
             <a href="#kontak" class="btn-nav">Hubungi Saya</a>
         </div>
     </nav>
@@ -33,25 +32,23 @@
                     
                     <div class="hero-actions">
                         <a href="#profil-detail" class="btn-primary">Lihat Profil Detail</a>
-                        <a href="#kontak" class="btn-secondary">Kontak</a>
+                    
+                        <a href="../PROFIL_KELUARGA/profile_keluarga_1.html" class="btn-secondary">Profil Keluarga</a>
                     </div>
                 </div>
 
-                
                 <div class="hero-image-wrapper fade-in">
-                    
                     <img src="WhatsApp Image 2026-10-22 at 13.34.28.jpeg" alt="Foto Dhika" class="hero-img">
                     <div class="img-backdrop"></div>
                 </div>
             </div>
         </section>
 
-        
         <section id="profil-detail" class="section-bg py-large">
             <div class="container">
                 <div class="section-header text-center reveal">
                     <h2 class="section-title">Data Pribadi</h2>
-                    <p class="subtitle">Informasi akademik dan domisili.</p>
+                    <p class="subtitle">Informasi akademik, domisili, dan keahlian.</p>
                 </div>
 
                 <div class="info-grid reveal">
@@ -81,11 +78,22 @@
                             <span>Manual Brew Coffee</span>
                         </div>
                     </div>
+
+                    <!-- Kartu Skill / Keahlian -->
+                    <div class="info-card">
+                        <div class="icon">⚙️</div>
+                        <h3>Keahlian (Skills)</h3>
+                        <div class="tags">
+                            <span>HTML & CSS</span>
+                            <span>MySQL / MariaDB</span>
+                            <span>UML & Use Case</span>
+                            <span>Git & GitHub</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        
         <section id="pendidikan" class="py-large">
             <div class="container">
                 <div class="timeline-wrapper">
@@ -110,14 +118,24 @@
                                 <h3>Sekolah Menengah Atas</h3>
                                 <h4>SMA Negeri 1 Cibingbin</h4>
                                 <ul class="org-list">
-                                    <li><strong>Sekretaris PASKIBRA:</strong> Mengelola administrasi dan dokumentasi kegiatan organisasi.</li>
+                                    <li><strong>Sekretaris PASKIBRA:</strong> Mengelola administrasi dan dokumentasi kegiatan.</li>
                                     <li><strong>Anggota MPK:</strong> Berpartisipasi dalam perwakilan dan pengawasan kinerja OSIS.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Lulusan</span>
+                                <h3>Sekolah Menengah Pertama</h3>
+                                <h4>SMP Negeri 1 Cibeureum</h4>
+                                <p>Menyelesaikan masa pendidikan tingkat menengah pertama sebagai siswa biasa.</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="timeline-column reveal" id="pengalaman">
                         <h2 class="column-title">💼 Pengalaman Kerja</h2>
                         
@@ -136,12 +154,92 @@
         </section>
 
         
-        <section id="kontak" class="contact-section py-large">
-            <div class="container text-center reveal">
-                <h2 class="section-title">Mari Berjejaring</h2>
-                <p class="subtitle contact-sub">Tertarik untuk berkolaborasi atau sekadar berdiskusi tentang teknologi dan kopi? Jangan ragu untuk menghubungi saya.</p>
+        <section id="jadwal" class="section-bg py-large">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <h2 class="section-title">Jadwal Kuliah</h2>
+                    <p class="subtitle">Rincian jadwal perkuliahan Semester Ganjil 2026/2027.</p>
+                </div>
                 
-                <div class="contact-links">
+                <div class="table-responsive reveal">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Hari</th>
+                                <th>Waktu</th>
+                                <th>Jenis</th>
+                                <th>Mata Kuliah</th>
+                                <th>Ruangan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Senin</strong></td>
+                                <td>13:00 - 16:15</td>
+                                <td><span class="badge-sm badge-kuliah">Kuliah</span></td>
+                                <td>Riset Operasi<br>Pemrograman Dasar</td>
+                                <td>FKOM-Ruang H<br>FKOM-Ruang I</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Selasa</strong></td>
+                                <td>08:00 - 16:15</td>
+                                <td><span class="badge-sm badge-mix">Praktik & Kuliah</span></td>
+                                <td>Analisis & Perancangan Sistem Info<br>Statistika Data<br>Pemrograman Dasar</td>
+                                <td>Lab. Multimedia<br>FKOM-Ruang K<br>Lab. RPL</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rabu</strong></td>
+                                <td>10:30 - 14:35</td>
+                                <td><span class="badge-sm badge-kuliah">Kuliah</span></td>
+                                <td>Analisis & Perancangan Sistem Info<br>Kalkulus</td>
+                                <td>FKOM-Ruang E<br>FKOM-Ruang I</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Kamis</strong></td>
+                                <td>08:00 - 14:35</td>
+                                <td><span class="badge-sm badge-mix">Praktik & Kuliah</span></td>
+                                <td>Web Desain<br>English Comm. for IT<br>Web Desain (Kuliah)</td>
+                                <td>Lab. RPL<br>FKOM-Ruang A<br>FKOM-Ruang C</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Jumat</strong></td>
+                                <td>08:00 - 17:05</td>
+                                <td><span class="badge-sm badge-mix">Praktik & Kuliah</span></td>
+                                <td>Analisis Proses Bisnis<br>Statistika Data<br>Arsitektur Komputer & OS</td>
+                                <td>FKOM-Ruang I<br>Lab. Multimedia<br>FKOM-Ruang R</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="contact-section py-large">
+            <div class="container reveal">
+                <div class="text-center">
+                    <h2 class="section-title">Mari Berjejaring</h2>
+                    <p class="subtitle contact-sub">Tertarik untuk berkolaborasi atau sekadar berdiskusi tentang teknologi dan kopi? Jangan ragu untuk menghubungi saya.</p>
+                </div>
+                
+                
+                <div class="contact-info-grid">
+                    <div class="contact-info-card">
+                        <h3>🕒 Jam Kerja / Kampus</h3>
+                        <p><strong>Senin - Jumat | 08.00 - 17.05 WIB</strong></p>
+                        <p style="color: #94a3b8; font-size: 0.9rem; margin-top: 5px;">(Waktu operasional menyesuaikan dengan jadwal perkuliahan di atas).</p>
+                    </div>
+                    <div class="contact-info-card">
+                        <h3>🔗 Tautan Cepat</h3>
+                        <div class="quick-links">
+                            <a href="https://uniku.ac.id" target="_blank">Situs Resmi Universitas Kuningan</a>
+                            <a href="#">Portal Akademik Uniku</a>
+                            <a href="#">Sistem E-Learning</a>
+                            <a href="#">Tugas & Laporan Praktikum</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-links text-center" style="margin-top: 40px;">
                     <a href="mailto:dhikamuhamad18@gmail.com" class="contact-btn email-btn">
                         <span class="icon">✉️</span> Email Saya
                     </a>
@@ -153,7 +251,6 @@
         </section>
     </main>
 
-    
     <footer>
         <div class="container">
             <div class="footer-inner">
